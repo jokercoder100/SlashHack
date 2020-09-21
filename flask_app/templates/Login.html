@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/login.css') }}">
+    <!--link rel="stylesheet" href="E:\Hackerearth\slash graphql\flask_app\static\login.css">-->
+    <script type="text/javascript">
+        function myFunction()
+        {
+        
+        var x = document.getElementById("submit");
+    
+        if (x.value === "GO") {
+        x.value="loading";
+        }
+    // <!--        x.innerHTML = "A computer science portal for geeks";-->
+    // <!--    } else {-->
+    // <!--        x.innerHTML = "Welcome to GeeksforGeeks";-->
+    // <!--    }-->
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    {% if flg == "False" : %}
+    <script> window.alert("Invalid Credentials"); </script>
+    {% endif %}
+    <!-- {% set flg="True" %} -->
+    <header class="intro">
+          <div class="wrapper">
+              <h1>
+                  Login
+              </h1>
+              <form action="/home" method="POST">
+                  <input name='username' type="text" placeholder="UserID">
+                  <input name='password' type="password" placeholder="Password">
+                  <input id="submit"  type="submit" onclick="myFunction();" value="GO">
+              </form>
+          </div>
+        </header>
+</body>
+</html>

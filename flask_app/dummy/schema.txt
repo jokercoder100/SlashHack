@@ -1,0 +1,25 @@
+type Student {
+  userid: ID! 
+  name: String @search(by: [exact])
+  school: String @search(by: [exact])
+  parentId: String @search(by: [hash])
+}
+
+type Forum {
+    userAsk:String! @id @search(by: [hash])
+    questionId: String! @search(by: [hash])
+    question: String! @search(by: [exact])
+    answerId: String @search(by: [hash])
+    answer: String @search(by: [exact])
+    userRep:String @search(by: [hash])
+    tags:String @search(by: [hash])
+}
+type blogs{
+	blogId:ID!
+    blog:String!
+    authorId:String! @id @search(by: [hash])
+}
+type Score{
+    userId:String! @id @search(by: [hash])
+    score:String!
+}

@@ -1,0 +1,105 @@
+
+body{
+    background-color: rgba(0, 0, 0,1);
+    color: white;
+    height:100vh;
+    margin: 0;
+    padding:0;
+    background-size:cover;
+    background-position:center;
+}
+.intro {
+    height: 100vh;
+    background-image: url('./school_building.jpg');
+    opacity: 1;
+    /* background: -webkit-linear-gradient(top left, #133955, #DD6FD6);
+    background: -moz-linear-gradient(top left, #133955, #DD6FD6); */
+    /* background: linear-gradient(to bottom right, #133955, #DD6FD6,#F85C51,#AB2735); */
+    animation: change 10s ease-in-out infinite;
+    background-size: 110% 130%;
+    position: relative;
+ }
+
+ h1{
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+     font-size: 22;
+     Color:#FFF;
+     text-align:center;
+     margin-bottom: 8%;
+     font-family: Courgette;
+
+ }
+ .wrapper{
+     width: 400px;
+     height: 375px;
+     opacity: 1;
+     vertical-align: middle;
+     color:#000;
+     background-image: url('./blackboard1.jpg');
+     background-position: center;
+     position: relative;
+     top: 10%;
+     border: blanchedalmond;
+     border-width: 10px;
+     padding: 60px 20px;
+     box-sizing: border-box;
+     box-shadow: 10px 10px 70px #000;
+     transform: translate(-50% -50%);
+     margin:0 auto 100px;
+     /* z-index:; */
+ }
+
+ .wrapper input{
+    font-family:"Roboto",sans-seriff;
+    outline:1;
+    color: black;
+    background:#f2f2f2;
+    width:100%;
+    border:0;
+    margin-bottom:20px;
+    padding:15px;
+    text-align:center;
+    box-sizing:border-box;
+    font-size:20px;
+}
+::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight: bold;
+    font-size:20px;
+}
+#submit{
+    position: relative;
+    font-family:"Roboto",sans-seriff;
+    text-transform:uppercase;
+    outline:0;
+    background:rgba(100,100,100,0.3);
+    width:100%;
+    border:0;
+    color:rgb(255, 255, 255);
+    padding:15px;
+    text-align:center;
+    font-size:25px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+ @keyframes change{
+     0%{
+         background-position:0 50%;
+     }
+     50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0 50%;
+    }
+ }
+ /* h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  } */
